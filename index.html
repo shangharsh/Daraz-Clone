@@ -7,44 +7,74 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="CSS/index.css">
 </head>
 <body>
-    <nav>
-        <div class="navTop">
-            <div class="navTopLeft">
-                <a href="#">Become a Seller</a>
-                <a href="#">Payments and Recharge</a>
-                <a href="#">Help and Support</a>
-                <a href="#">Daraz Logistics Partner</a>
+        <nav class="ps-5 pe-5">
+            <div class="navTop">
+                <div class="navTopLeft">
+                    <a href="#">Become a Seller</a>
+                    <a href="#">Payments and Recharge</a>
+                    <a href="#">Help and Support</a>
+                    <a href="#">Daraz Logistics Partner</a>
+                </div>
+                <div class="navTopRight">
+                    <a href="#">Save More on App</a>
+                </div>
             </div>
-            <div class="navTopRight">
-                <a href="#">Save More on App</a>
+            <div class="navBottom">
+                <div class="logoContainer">
+                    <a href="#" class="fs-3 fw-bold d-flex justify-content-between   align-items-center">
+                        <span class="material-symbols-outlined fw-bold fs-1">
+                            local_convenience_store
+                        </span>
+                        Daraz
+                    </a>
+                </div>
+                <div class="searchContainer">
+                    <form action="#" method="post">
+                        <input type="text" name="search" id="search" placeholder="Search in Daraz"/>
+                        <a href="#">
+                            <span class="material-symbols-outlined">search</span>
+                        </a>
+                    </form>
+                </div>
+                <div class="requestContainer">
+                    <a href="#" class="login">
+                        <span class="material-symbols-outlined">person_2</span>
+                        <p class="m-0 loginText">Login</p>
+                    </a>
+                    <a class="text-white">|</a>
+                    <a href="#">
+                        <p class="m-0 signUpText">Sign Up</p>
+                    </a>
+                    <span class="material-symbols-outlined text-white langContainer">language <p class="fs-6 m-0 ps-1">EN</p></span>
+                    <a href="#">
+                        <span class="material-symbols-outlined fs-2">shopping_cart</span>
+                    </a>
+                </div>
             </div>
-        </div>
-        <div class="navBottom">
-            <div class="logoContainer">
-                <a href="#">Daraz</a>
+        </nav>
+        <section class="ps-5 pe-5">
+            <div class="bannerContainer position-relative">
+                <div class="categories card mt-3">
+                    <ul class="list-group">
+                        <li class="list-group-item border-0  d-flex flex-start align-items-center"><i class="fa-solid fa-vest-patches me-2 bg-body-secondary ps-2 pt-2 pe-2 pb-2 rounded-circle"></i> <p class="m-0">Women's Fashion</p></li>
+                        <li class="list-group-item border-0  d-flex flex-start align-items-center"><i class="fa-solid fa-vest-patches me-2 bg-body-secondary ps-2 pt-2 pe-2 pb-2 rounded-circle"></i> <p class="m-0">Health & Beauty</p></li>
+                        <li class="list-group-item border-0  d-flex flex-start align-items-center"><i class="fa-solid fa-vest-patches me-2 bg-body-secondary ps-2 pt-2 pe-2 pb-2 rounded-circle"></i> <p class="m-0">Men's Fashion</p></li>
+                        <li class="list-group-item border-0  d-flex flex-start align-items-center"><i class="fa-solid fa-vest-patches me-2 bg-body-secondary ps-2 pt-2 pe-2 pb-2 rounded-circle"></i> <p class="m-0">Watches & Accessories</p></li>
+                        <li class="list-group-item border-0  d-flex flex-start align-items-center"><i class="fa-solid fa-vest-patches me-2 bg-body-secondary ps-2 pt-2 pe-2 pb-2 rounded-circle"></i> <p class="m-0">Electronic Devices</p></li>
+                        <li class="list-group-item border-0  d-flex flex-start align-items-center"><i class="fa-solid fa-vest-patches me-2 bg-body-secondary ps-2 pt-2 pe-2 pb-2 rounded-circle"></i> <p class="m-0">TV & Home Appliances</p></li>
+                        <li class="list-group-item border-0  d-flex flex-start align-items-center"><i class="fa-solid fa-vest-patches me-2 bg-body-secondary ps-2 pt-2 pe-2 pb-2 rounded-circle"></i> <p class="m-0">Electronic Accessories</p></li>
+                    </ul>
+                </div>
+                <div class="homePageBanner position-absolute top-0 end-0 h-100 card">
+                    Hello Welcome to the daraz clone application.
+                </div>
             </div>
-            <div class="searchContainer">
-                <form action="#" method="post">
-                    <input type="text" name="search" id="search" placeholder="Search in Daraz"/>
-                    <a href="#">Search</a>
-                </form>
-            </div>
-            <div class="requestContainer">
-                <a href="#" class="login">
-                    <p>Icon</p>
-                    <p>Login</p>
-                </a>
-                <a>|</a>
-                <a href="#">
-                    <p>Sign Up</p>
-                </a>
-                <a>Icon EN</a>
-                <a href="#">Cart</a>
-            </div>
-        </div>
-    </nav>
+        </section>
 </body>
 </html>
