@@ -159,9 +159,43 @@ body{
     height: 50px;
 }
 
-.productImage{
-}
-
 .productImage>a:hover{
     color: #f85606;
+}
+
+.saleProduct>img{
+    width: 180px;
+}
+
+.saleProduct{
+    width: 180px;
+    border: 1px solid #ffffff;
+}
+
+.bgOrange{
+    background-color: #f85606;
+    padding: 5px 8px;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+.textOrange{
+    color: #f85606;
+}
+
+.saleMore{
+    background-color: #fff;
+    border: 1px solid #f85606;
+    color: #f85606;
+    border-radius: 3px;
+}
+
+.productColor{
+    color: #f85606;
+}
+
+.saleProduct:hover{
+    /* border: 1px solid #111111; */
+    box-shadow: 0 0 3px #111111;
+    cursor: pointer;
 }
