@@ -239,3 +239,37 @@ li{
     color: #f85606;
     background-color: #fff;
 }
+
+footer p, .happy{
+    color: #f85606;
+}
+
+.fs-10{
+    font-size: 10px;
+}
+
+.fa-facebook{
+    color: rgb(82, 82, 201);
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+.fa-square-instagram{
+    background-image: linear-gradient(blue, pink, red, orange);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+.fa-square-youtube{
+    color: red;
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+.fa-globe{
+    color: #f85606;
+    font-size: 25px;
+    margin-right: 10px;
+}
