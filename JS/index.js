@@ -1,28 +1,3 @@
-// let index = 0;
-// let transitionDelay = 2000;
-
-// let sliderContainer = document.querySelector('.sliderContainer');
-// let slides = sliderContainer.querySelectorAll('.slides');
-
-// for(let slide of slides){
-//     slide.style.transition = `all ${transitionDelay/1000}s linear`;
-// }
-
-// showSlide(index);
-
-// function showSlide(slideNumber){
-//     slides.forEach((slide, i)=>{
-//         slide.style.display = i == slideNumber ? 'block' : 'none';
-//     });
-//     index++;
-
-//     if(index >=  slides.length){
-//         index = 0;
-//     }
-// }
-
-// setInterval(()=> showSlide(index), transitionDelay);
-
 const slider = document.querySelector('.sliderContainer');
 const slides = slider.querySelectorAll('.slides');
  
@@ -40,3 +15,41 @@ setInterval(() => {
   }
   slides[activeSlide].classList.add('active');
 }, 2000);
+
+const url = 'https://dummyjson.com/products';
+
+async function fetchData(){
+  try{
+  const response = await fetch(url);
+  const data = await response.json();
+
+  //All Products
+  const products = data.products;
+  console.log(products);
+
+  //All Categories
+  const categories = products.map((product, index) => {
+    return product.category;
+  }
+  );
+  //Unique Categories
+  // let catContainer = document.getElementsByClassName('categories')[0];
+  let catContainer = document.getElementById('categories');
+  const uniqueCat = [... new Set(categories)];
+  let ul = document.createElement('ul');
+  ul.className = 'list-group';
+  uniqueCat.forEach((category) =>{
+    let li = document.createElement('li');
+    li.className = 'list-group-item border-0  d-flex align-items-center';
+    li.innerHTML = `<i class="fa-solid fa-vest-patches me-2 bg-body-secondary ps-2 pt-2 pe-2 pb-2 rounded-circle"></i> <p class="m-0">${category.charAt(0).toUpperCase() + category.slice(1)}</p>`;
+    ul.appendChild(li);
+  });
+  catContainer.appendChild(ul);
+
+  console.log(uniqueCat)
+
+} catch(error){
+  console.log('Error While Fetching The Products', error);
+}}
+
+fetchData();
