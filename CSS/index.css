@@ -228,11 +228,21 @@ li{
 
 .productList{
     width: 180px;
+    height: 230px;
+}
+
+.rating{
+    font-size: 14px;
 }
 
 .productTitle{
     font-size: 14px;
 }
+
+/* .products>ul>a>li>img{
+    width: 10px;
+    height: 100px;
+} */
 
 .btnContainer button{
     border: 1px solid #f85606;
